@@ -40,7 +40,8 @@ qemu-system-arm \
         -sd 2018-11-13-raspbian-stretch.img \
         -append "console=ttyAMA0,115200 root=/dev/mmcblk0p2" \
         -serial stdio \
-        -net nic -net user,hostfwd=tcp::2222-:22
+        -net nic -net user,hostfwd=tcp::2222-:22 \
+        -nographic
 ```
 
 If everything went well, Raspbian should boot (default username and password of Raspbian are pi and raspberry respectively).
